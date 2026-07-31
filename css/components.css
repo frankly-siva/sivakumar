@@ -1,0 +1,434 @@
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary {
+    background-color: var(--text-main);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-blue);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-main);
+}
+
+/* About Cards */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.about-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    border-radius: 6px;
+}
+
+.about-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.about-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Journey Flow */
+.journey-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 700px;
+}
+
+.journey-step {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 1.75rem 2rem;
+    border-radius: 6px;
+    position: relative;
+}
+
+.step-num {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.journey-step h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.journey-step p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+}
+
+.arrow-separator {
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    padding-left: 2rem;
+}
+
+/* Experience Cards */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.experience-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 3rem;
+    border-radius: 6px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.exp-header h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.company-name {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.exp-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--bg-alt);
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.exp-context {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+}
+
+.experience-card h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.experience-card ul {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience-card li {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.experience-card li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+.exp-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* Methodology Grid */
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.method-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.method-card span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.method-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.method-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* Capabilities & Tech badges */
+.caps-grid, .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cap-item, .tech-badge {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.85rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Credentials */
+.creds-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.cred-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.cred-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+}
+
+.cred-inst {
+    color: var(--accent-blue);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.cred-meta {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin-top: 0.5rem;
+}
+
+.lang-list {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.lang-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+.lang-row:last-child {
+    border-bottom: none;
+}
+
+.lang-level {
+    color: var(--text-muted);
+}
+
+/* Accordion (Thinking Lab) */
+.accordion-container {
+    max-width: 800px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.accordion-header:hover {
+    background: var(--bg-alt);
+}
+
+.accordion-status {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background: var(--bg-alt);
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    background: var(--bg-alt);
+    padding: 0 2rem;
+}
+
+.accordion-content p {
+    padding: 1.5rem 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Vision Box */
+.vision-box {
+    background: var(--bg-alt);
+    border: 1px solid var(--border-color);
+    padding: 4rem;
+    border-radius: 6px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.vision-quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.vision-text {
+    color: var(--text-muted);
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Grid */
+.contact-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+}
+
+.contact-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition-smooth);
+}
+
+.contact-card:hover {
+    border-color: var(--text-main);
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contact-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+}
+
+.contact-text {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* Footer */
+.site-footer {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
